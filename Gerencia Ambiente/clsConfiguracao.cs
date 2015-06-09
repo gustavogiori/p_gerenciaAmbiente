@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace Gerencia_Ambiente
 {
+    //Teste
     public class clsConfiguracao
     {
 

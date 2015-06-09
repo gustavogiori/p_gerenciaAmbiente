@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.tbInicial = new System.Windows.Forms.TabControl();
             this.tbCriarAmbiente = new System.Windows.Forms.TabPage();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnEspecificaPortal = new System.Windows.Forms.Button();
             this.lblEspecificaPortal = new System.Windows.Forms.Label();
@@ -59,7 +58,6 @@
             this.checkLabore = new System.Windows.Forms.CheckBox();
             this.checkBiblioteca = new System.Windows.Forms.CheckBox();
             this.txtNome = new System.Windows.Forms.TextBox();
-            this.lblTeste = new System.Windows.Forms.Label();
             this.btnExecutar = new System.Windows.Forms.Button();
             this.processo = new System.Windows.Forms.Label();
             this.tbEditar = new System.Windows.Forms.TabPage();
@@ -70,6 +68,8 @@
             this.btnAtualizarCaminho = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.txtAtualizarExpefica = new System.Windows.Forms.TextBox();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.lblTeste = new System.Windows.Forms.Label();
             this.lblProcessando = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.tbInicial.SuspendLayout();
@@ -103,13 +103,6 @@
             this.tbCriarAmbiente.TabIndex = 0;
             this.tbCriarAmbiente.Text = "Criar Ambiente";
             this.tbCriarAmbiente.UseVisualStyleBackColor = true;
-            // 
-            // progressBar1
-            // 
-            this.progressBar1.Location = new System.Drawing.Point(16, 475);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(741, 22);
-            this.progressBar1.TabIndex = 19;
             // 
             // groupBox2
             // 
@@ -401,15 +394,6 @@
             this.txtNome.Size = new System.Drawing.Size(154, 20);
             this.txtNome.TabIndex = 5;
             // 
-            // lblTeste
-            // 
-            this.lblTeste.AutoSize = true;
-            this.lblTeste.Location = new System.Drawing.Point(33, 455);
-            this.lblTeste.Name = "lblTeste";
-            this.lblTeste.Size = new System.Drawing.Size(118, 13);
-            this.lblTeste.TabIndex = 15;
-            this.lblTeste.Text = "Processando caminho :";
-            // 
             // btnExecutar
             // 
             this.btnExecutar.Location = new System.Drawing.Point(367, 341);
@@ -507,6 +491,22 @@
             this.txtAtualizarExpefica.Size = new System.Drawing.Size(154, 20);
             this.txtAtualizarExpefica.TabIndex = 13;
             // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(16, 475);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(741, 22);
+            this.progressBar1.TabIndex = 19;
+            // 
+            // lblTeste
+            // 
+            this.lblTeste.AutoSize = true;
+            this.lblTeste.Location = new System.Drawing.Point(33, 455);
+            this.lblTeste.Name = "lblTeste";
+            this.lblTeste.Size = new System.Drawing.Size(118, 13);
+            this.lblTeste.TabIndex = 15;
+            this.lblTeste.Text = "Processando caminho :";
+            // 
             // lblProcessando
             // 
             this.lblProcessando.AutoSize = true;
@@ -529,7 +529,7 @@
             this.Controls.Add(this.lblTeste);
             this.Controls.Add(this.lblProcessando);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Home";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tbInicial.ResumeLayout(false);
             this.tbCriarAmbiente.ResumeLayout(false);
